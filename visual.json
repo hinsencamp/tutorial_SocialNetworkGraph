@@ -1,1 +1,0 @@
-{"nodes":[{"name":"Paul","user":{"name":"Paul"},"friends":{}},{"name":"Fabian","user":{"name":"Fabian"},"friends":{}}],"links":[{"source":"Paul","target":"Fabian"},{"source":"Fabian","target":"Paul"}]}

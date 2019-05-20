@@ -1,26 +1,28 @@
 // Methods
-const { Graph, Node } = require("./index");
-const members = require("./members.json");
-const writeToJSON = require("./helpers");
+const { Graph, Node } = require("./graph");
+const { writeToJSON, generateRandomNetwork } = require("./helpers");
 
-const graph = new Graph();
+// (1) Build your own Network
+// const fabian = new Node({ name: "Fabian" });
+// const rey = new Node({ name: "Rey" });
+// const ellie = new Node({ name: "Ellie" });
+// const cassi = new Node({ name: "Cassi" });
 
-const paul = new Node(members[0]);
-const fabian = new Node(members[1]);
+// const graph = new Graph();
 
-graph.addNode(paul);
-graph.addNode(fabian);
+// graph.addNode(fabian);
+// graph.addNode(rey);
+// graph.addNode(ellie);
+// graph.addNode(cassi);
 
-// connect;
-graph.get(fabian).addConnection(paul);
+// graph.get("Fabian").addConnection(graph.get("Rey"));
+// graph.get("Fabian").addConnection(graph.get("Ellie"));
+// graph.get("Fabian").addConnection(graph.get("Cassi"));
 
-// console.log(graph.get(fabian));
-// create links
-const data = {
-  nodes: [...graph.getMembers()],
-  links: graph.getEdges()
-};
+// graph.get("Ellie").addConnection(graph.get("Cassi"));
 
-console.log(data);
+// writeToJSON(graph.graph, "graph");
 
-writeToJSON(data, "visual");
+// (2) Grow the Network
+// generateRandomNetwork(graph, 100);
+// writeToJSON(graph.graph, "graph");
