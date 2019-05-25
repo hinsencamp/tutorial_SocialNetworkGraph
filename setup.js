@@ -8,7 +8,7 @@ const { writeToJSON, generateRandomNetwork } = require("./helpers");
 // const ellie = new Node({ name: "Ellie" });
 // const cassi = new Node({ name: "Cassi" });
 
-// const graph = new Graph();
+const graph = new Graph();
 
 // graph.addNode(fabian);
 // graph.addNode(rey);
@@ -24,5 +24,5 @@ const { writeToJSON, generateRandomNetwork } = require("./helpers");
 // writeToJSON(graph.graph, "graph");
 
 // (2) Grow the Network
-// generateRandomNetwork(graph, 100);
+// generateRandomNetwork(graph, 150);
 // writeToJSON(graph.graph, "graph");

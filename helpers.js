@@ -1,6 +1,6 @@
 var fs = require("fs");
 const mockData = require("./mock_data.json");
-const { Node } = require("./index");
+const { Node } = require("./graph");
 
 function writeToJSON(jsonData, title) {
   fs.writeFile(`./${title}.json`, JSON.stringify(jsonData), function(err) {
